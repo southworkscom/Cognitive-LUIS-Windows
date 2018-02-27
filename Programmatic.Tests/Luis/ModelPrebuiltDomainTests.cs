@@ -26,7 +26,7 @@
                 foreach (var result in results)
                 {
                     Assert.True(result != Guid.Empty);
-                    Assert.Contains(prebuiltModels, m => m.Id.Equals(result));
+                    Assert.Contains(prebuiltModels.Result, m => m.Id.Equals(result));
                 }
             });
         }
@@ -46,13 +46,13 @@
                 var results = await client.Model.AddCustomPrebuiltDomainAsync(appId, version, prebuiltDomain);
                 var prebuiltModels = await client.Model.ListCustomPrebuiltModelsAsync(appId, version);
 
-                Assert.Contains(prebuiltModels, o => o.CustomPrebuiltDomainName == "Gaming");
+                Assert.Contains(prebuiltModels.Result, o => o.CustomPrebuiltDomainName == "Gaming");
 
                 await client.Model.DeleteCustomPrebuiltDomainAsync(appId, version, prebuiltDomain.DomainName);
 
                 prebuiltModels = await client.Model.ListCustomPrebuiltModelsAsync(appId, version);
 
-                Assert.DoesNotContain(prebuiltModels, o => o.CustomPrebuiltDomainName == "Gaming");
+                Assert.DoesNotContain(prebuiltModels.Result, o => o.CustomPrebuiltDomainName == "Gaming");
             });
         }
 
@@ -71,7 +71,7 @@
                 var results = await client.Model.AddCustomPrebuiltDomainAsync(appId, version, prebuiltDomain);
                 var prebuiltEntities = await client.Model.ListCustomPrebuiltEntitiesAsync(appId, version);
 
-                Assert.Contains(prebuiltEntities, entity => entity.CustomPrebuiltDomainName == prebuiltDomain.DomainName);
+                Assert.Contains(prebuiltEntities.Result, entity => entity.CustomPrebuiltDomainName == prebuiltDomain.DomainName);
             });
         }
 
@@ -91,7 +91,7 @@
                 var guidModel = await client.Model.AddCustomPrebuiltEntityAsync(appId, version, prebuiltModel);
                 var prebuiltEntities = await client.Model.ListCustomPrebuiltEntitiesAsync(appId, version);
 
-                Assert.Contains(prebuiltEntities, entity => entity.Id == guidModel);
+                Assert.Contains(prebuiltEntities.Result, entity => entity.Id == guidModel);
             });
         }
 
@@ -110,7 +110,7 @@
                 var results = await client.Model.AddCustomPrebuiltDomainAsync(appId, version, prebuiltDomain);
                 var prebuiltIntents = await client.Model.ListCustomPrebuiltIntentsAsync(appId, version);
 
-                Assert.Contains(prebuiltIntents, entity => entity.CustomPrebuiltDomainName == prebuiltDomain.DomainName);
+                Assert.Contains(prebuiltIntents.Result, entity => entity.CustomPrebuiltDomainName == prebuiltDomain.DomainName);
             });
         }
 
@@ -132,7 +132,7 @@
 
                 await client.Model.DeleteIntentAsync(appId, version, guidModel);
 
-                Assert.Contains(prebuiltIntents, entity => entity.Id == guidModel);
+                Assert.Contains(prebuiltIntents.Result, entity => entity.Id == guidModel);
             });
         }
 
@@ -153,7 +153,7 @@
                 
                 var validTypes = new string[] { "Intent Classifier", "Entity Extractor" };
 
-                Assert.True(prebuiltModels.All(m => validTypes.Contains(m.ReadableType)));
+                Assert.True(prebuiltModels.Result.All(m => validTypes.Contains(m.ReadableType)));
             });
         }
     }

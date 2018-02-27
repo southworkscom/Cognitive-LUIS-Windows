@@ -1113,7 +1113,7 @@ namespace Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<IntentClassifier>> ListCustomPrebuiltIntentsAsync(this IModel operations, System.Guid appId, string versionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<TaskIntentClassifiersList> ListCustomPrebuiltIntentsAsync(this IModel operations, System.Guid appId, string versionId, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.ListCustomPrebuiltIntentsWithHttpMessagesAsync(appId, versionId, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -1163,7 +1163,7 @@ namespace Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<EntityExtractor>> ListCustomPrebuiltEntitiesAsync(this IModel operations, System.Guid appId, string versionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<TaskEntityExtractorsList> ListCustomPrebuiltEntitiesAsync(this IModel operations, System.Guid appId, string versionId, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.ListCustomPrebuiltEntitiesWithHttpMessagesAsync(appId, versionId, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -1186,7 +1186,7 @@ namespace Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<CustomPrebuiltModel>> ListCustomPrebuiltModelsAsync(this IModel operations, System.Guid appId, string versionId, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<TaskCustomPrebuiltModelList> ListCustomPrebuiltModelsAsync(this IModel operations, System.Guid appId, string versionId, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.ListCustomPrebuiltModelsWithHttpMessagesAsync(appId, versionId, null, cancellationToken).ConfigureAwait(false))
                 {

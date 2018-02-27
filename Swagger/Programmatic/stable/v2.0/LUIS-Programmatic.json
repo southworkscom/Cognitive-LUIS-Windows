@@ -3594,7 +3594,7 @@
           "200": {
             "description": "Returns a list of all custom prebuilt intents and their representations.",
             "schema": {
-              "$ref": "#/definitions/IntentClassifiersList"
+              "$ref": "#/definitions/TaskIntentClassifiersList"
             }
           },
           "default": {
@@ -3677,7 +3677,7 @@
           "200": {
             "description": "Returns a list of all custom prebuilt entities and their representations.",
             "schema": {
-              "$ref": "#/definitions/EntityExtractorsList"
+              "$ref": "#/definitions/TaskEntityExtractorsList"
             }
           },
           "default": {
@@ -3713,7 +3713,7 @@
           "200": {
             "description": "Returns a list of all custom prebuilt models and their representations.",
             "schema": {
-              "$ref": "#/definitions/CustomPrebuiltModelList"
+              "$ref": "#/definitions/TaskCustomPrebuiltModelList"
             }
           },
           "default": {
@@ -5832,6 +5832,20 @@
         }
       ]
     },
+    "TaskCustomPrebuiltModelList": {
+      "description": "A List of Custom Prebuilt models.",
+      "type": "object",
+      "properties": {
+        "Result": { "$ref": "#/definitions/CustomPrebuiltModelList" }
+      }
+    },
+    "CustomPrebuiltModelList": {
+      "description": "A List of Custom Prebuilt models.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/CustomPrebuiltModel"
+      }
+    },
     "CustomPrebuiltModel": {
       "description": "A Custom Prebuilt model.",
       "allOf": [
@@ -5845,13 +5859,6 @@
           "$ref": "#/definitions/EntityExtractor"
         }
       ]
-    },
-    "CustomPrebuiltModelList": {
-      "description": "A List of Custom Prebuilt models.",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/CustomPrebuiltModel"
-      }
     },
     "IntentClassifier": {
       "description": "Intent Classifier.",
@@ -5893,11 +5900,25 @@
         }
       }
     },
+    "TaskIntentClassifiersList": {
+      "description": "List of Intent Classifiers.",
+      "type": "object",
+      "properties": {
+        "Result": { "$ref": "#/definitions/EntityExtractorsList" }
+      }
+    },
     "IntentClassifiersList": {
       "description": "List of Intent Classifiers.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/IntentClassifier"
+      }
+    },
+    "TaskEntityExtractorsList": {
+      "description": "List of Entity Extractors.",
+      "type": "object",
+      "properties": {
+        "Result": { "$ref": "#/definitions/EntityExtractorsList" }
       }
     },
     "EntityExtractorsList": {
