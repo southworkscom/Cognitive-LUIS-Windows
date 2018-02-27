@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/entities",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2VudGl0aWVz",
+
       "RequestMethod": "POST",
       "RequestBody": "{\r\n  \"name\": \"New Entity Test\"\r\n}",
       "RequestHeaders": {
@@ -69,7 +69,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/entities/ca57c698-f56e-4b2c-8b45-24f16c1d8d91",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2VudGl0aWVzL2NhNTdjNjk4LWY1NmUtNGIyYy04YjQ1LTI0ZjE2YzFkOGQ5MQ==",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -124,7 +124,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/entities/ca57c698-f56e-4b2c-8b45-24f16c1d8d91",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2VudGl0aWVzL2NhNTdjNjk4LWY1NmUtNGIyYy04YjQ1LTI0ZjE2YzFkOGQ5MQ==",
+
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {

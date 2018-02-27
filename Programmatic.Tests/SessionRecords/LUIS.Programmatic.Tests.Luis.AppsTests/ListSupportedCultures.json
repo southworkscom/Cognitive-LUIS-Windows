@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/cultures",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9jdWx0dXJlcw==",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {

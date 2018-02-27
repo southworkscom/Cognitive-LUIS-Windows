@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/closedlists",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2Nsb3NlZGxpc3Rz",
+
       "RequestMethod": "POST",
       "RequestBody": "{\r\n  \"subLists\": [\r\n    {\r\n      \"canonicalForm\": \"New York\",\r\n      \"list\": [\r\n        \"NY\",\r\n        \"New York\"\r\n      ]\r\n    },\r\n    {\r\n      \"canonicalForm\": \"Washington\",\r\n      \"list\": [\r\n        \"WA\",\r\n        \"Washington\"\r\n      ]\r\n    },\r\n    {\r\n      \"canonicalForm\": \"California\",\r\n      \"list\": [\r\n        \"CA\",\r\n        \"California\",\r\n        \"Calif.\",\r\n        \"Cal.\"\r\n      ]\r\n    }\r\n  ],\r\n  \"name\": \"States\"\r\n}",
       "RequestHeaders": {
@@ -69,7 +69,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/closedlists?skip=0&take=100",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2Nsb3NlZGxpc3RzP3NraXA9MCZ0YWtlPTEwMA==",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -124,7 +124,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/closedlists/d56d22f2-5e0a-4c77-8731-d00d37640d9d",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2Nsb3NlZGxpc3RzL2Q1NmQyMmYyLTVlMGEtNGM3Ny04NzMxLWQwMGQzNzY0MGQ5ZA==",
+
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {

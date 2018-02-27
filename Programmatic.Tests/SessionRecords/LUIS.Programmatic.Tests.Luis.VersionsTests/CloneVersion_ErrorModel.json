@@ -2,22 +2,22 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions?skip=0&take=100",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnM/c2tpcD0wJnRha2U9MTAw",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
         "Ocp-Apim-Subscription-Key": [
-          "00000000000000000000000000000000 "
+          "00000000000000000000000000000000"
         ],
         "User-Agent": [
-          "FxVersion/4.6.25815.04",
-          "Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic.LuisProgrammaticAPI/0.0.0.0"
+          "FxVersion/4.6.26020.03",
+          "Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic.LuisProgrammaticAPI/2.0.0.0"
         ]
       },
-      "ResponseBody": "[\r\n  {\r\n    \"version\": \"0.1\",\r\n    \"createdDateTime\": \"2017-02-09T14:01:45Z\",\r\n    \"lastModifiedDateTime\": \"2017-12-14T21:37:17Z\",\r\n    \"lastTrainedDateTime\": null,\r\n    \"lastPublishedDateTime\": \"2017-12-12T21:59:37Z\",\r\n    \"endpointUrl\": \"https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b\",\r\n    \"assignedEndpointKey\": {\r\n      \"SubscriptionKey\": \"00000000000000000000000000000000\",\r\n      \"SubscriptionRegion\": \"westus\",\r\n      \"SubscriptionName\": null\r\n    },\r\n    \"externalApiKeys\": {},\r\n    \"intentsCount\": 9,\r\n    \"entitiesCount\": 11,\r\n    \"endpointHitsCount\": 0,\r\n    \"trainingStatus\": \"NeedsTraining\"\r\n  },\r\n  {\r\n    \"version\": \"0.2\",\r\n    \"createdDateTime\": \"2017-11-30T22:57:36Z\",\r\n    \"lastModifiedDateTime\": \"2017-11-30T22:57:41Z\",\r\n    \"lastTrainedDateTime\": null,\r\n    \"lastPublishedDateTime\": null,\r\n    \"endpointUrl\": \"https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b\",\r\n    \"assignedEndpointKey\": {\r\n      \"SubscriptionKey\": \"\",\r\n      \"SubscriptionRegion\": \"westus\",\r\n      \"SubscriptionName\": \"\"\r\n    },\r\n    \"externalApiKeys\": {},\r\n    \"intentsCount\": 5,\r\n    \"entitiesCount\": 4,\r\n    \"endpointHitsCount\": 0,\r\n    \"trainingStatus\": \"NeedsTraining\"\r\n  }\r\n]",
+      "ResponseBody": "[\r\n  {\r\n    \"version\": \"0.1\",\r\n    \"createdDateTime\": \"2017-12-22T18:04:34Z\",\r\n    \"lastModifiedDateTime\": \"2018-02-27T18:20:15Z\",\r\n    \"lastTrainedDateTime\": \"2018-02-27T18:21:15Z\",\r\n    \"lastPublishedDateTime\": \"2018-02-27T13:08:20Z\",\r\n    \"endpointUrl\": null,\r\n    \"assignedEndpointKey\": null,\r\n    \"externalApiKeys\": null,\r\n    \"intentsCount\": 8,\r\n    \"entitiesCount\": 6,\r\n    \"endpointHitsCount\": 0,\r\n    \"trainingStatus\": \"Trained\"\r\n  },\r\n  {\r\n    \"version\": \"0.2.778\",\r\n    \"createdDateTime\": \"2017-12-22T18:06:02Z\",\r\n    \"lastModifiedDateTime\": \"2017-12-22T18:13:31Z\",\r\n    \"lastTrainedDateTime\": \"2017-12-22T18:06:06Z\",\r\n    \"lastPublishedDateTime\": \"2017-12-22T18:13:32Z\",\r\n    \"endpointUrl\": null,\r\n    \"assignedEndpointKey\": null,\r\n    \"externalApiKeys\": null,\r\n    \"intentsCount\": 3,\r\n    \"entitiesCount\": 0,\r\n    \"endpointHitsCount\": 0,\r\n    \"trainingStatus\": \"Trained\"\r\n  }\r\n]",
       "ResponseHeaders": {
         "Content-Length": [
-          "1014"
+          "705"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -26,16 +26,16 @@
           "no-store, proxy-revalidate, no-cache, max-age=0, private"
         ],
         "Date": [
-          "Thu, 14 Dec 2017 21:37:18 GMT"
+          "Tue, 27 Feb 2018 18:21:56 GMT"
         ],
         "Pragma": [
           "no-cache"
         ],
         "Apim-Request-Id": [
-          "363febf2-f32a-43c2-9394-24b6976c0624"
+          "be3e9d61-672e-4b2e-b4a2-e70afbbc3f33"
         ],
         "Request-Id": [
-          "363febf2-f32a-43c2-9394-24b6976c0624"
+          "be3e9d61-672e-4b2e-b4a2-e70afbbc3f33"
         ],
         "Request-Context": [
           "appId=cid-v1:26a3540d-a02a-4998-a060-715488fd769b"
@@ -57,7 +57,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/clone",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2Nsb25l",
+
       "RequestMethod": "POST",
       "RequestBody": "{\r\n  \"version\": \"\"\r\n}",
       "RequestHeaders": {
@@ -68,17 +68,17 @@
           "21"
         ],
         "Ocp-Apim-Subscription-Key": [
-          "00000000000000000000000000000000 "
+          "00000000000000000000000000000000"
         ],
         "User-Agent": [
-          "FxVersion/4.6.25815.04",
-          "Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic.LuisProgrammaticAPI/0.0.0.0"
+          "FxVersion/4.6.26020.03",
+          "Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic.LuisProgrammaticAPI/2.0.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"BadArgument\",\r\n    \"message\": \"Version Id can consist only of characters, digits or '.'\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"BadArgument\",\r\n    \"message\": \"newVersionId cannot be null or empty.\"\r\n  }\r\n}",
       "ResponseHeaders": {
         "Content-Length": [
-          "126"
+          "107"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -87,16 +87,16 @@
           "no-store, proxy-revalidate, no-cache, max-age=0, private"
         ],
         "Date": [
-          "Thu, 14 Dec 2017 21:37:19 GMT"
+          "Tue, 27 Feb 2018 18:21:57 GMT"
         ],
         "Pragma": [
           "no-cache"
         ],
         "Apim-Request-Id": [
-          "00165a0e-8c02-4b56-9f0b-ed0b26445726"
+          "9058d807-e71d-4ba8-8847-abd5e7f967ee"
         ],
         "Request-Id": [
-          "00165a0e-8c02-4b56-9f0b-ed0b26445726"
+          "9058d807-e71d-4ba8-8847-abd5e7f967ee"
         ],
         "Request-Context": [
           "appId=cid-v1:26a3540d-a02a-4998-a060-715488fd769b"

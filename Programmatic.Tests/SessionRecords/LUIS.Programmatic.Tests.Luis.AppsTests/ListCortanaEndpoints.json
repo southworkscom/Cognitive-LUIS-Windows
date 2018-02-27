@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/assistants",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9hc3Npc3RhbnRz",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {

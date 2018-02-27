@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/prebuilts",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL3ByZWJ1aWx0cw==",
+
       "RequestMethod": "POST",
       "RequestBody": "[\r\n  \"number\"\r\n]",
       "RequestHeaders": {
@@ -63,7 +63,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/prebuilts?skip=0&take=100",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL3ByZWJ1aWx0cz9za2lwPTAmdGFrZT0xMDA=",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -118,7 +118,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/prebuilts/b2ccad31-0279-472d-8380-fcc4ee3d2c37",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL3ByZWJ1aWx0cy9iMmNjYWQzMS0wMjc5LTQ3MmQtODM4MC1mY2M0ZWUzZDJjMzc=",
+
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {

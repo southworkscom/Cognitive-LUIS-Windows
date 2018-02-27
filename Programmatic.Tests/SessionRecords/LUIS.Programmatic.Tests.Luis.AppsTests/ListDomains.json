@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/domains",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9kb21haW5z",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {

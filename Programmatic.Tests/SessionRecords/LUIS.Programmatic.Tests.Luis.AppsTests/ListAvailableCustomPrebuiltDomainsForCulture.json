@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/customprebuiltdomains/en-US",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9jdXN0b21wcmVidWlsdGRvbWFpbnMvZW4tVVM=",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -57,7 +57,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/customprebuiltdomains/zh-CN",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9jdXN0b21wcmVidWlsdGRvbWFpbnMvemgtQ04=",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {

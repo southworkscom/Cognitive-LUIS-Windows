@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/customprebuiltdomains",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9jdXN0b21wcmVidWlsdGRvbWFpbnM=",
+
       "RequestMethod": "POST",
       "RequestBody": "{\r\n  \"domainName\": \"Calendar\",\r\n  \"culture\": \"en-US\"\r\n}",
       "RequestHeaders": {
@@ -69,7 +69,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/73d6bf8a-8b1c-4c7e-84aa-31f5129beb18",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy83M2Q2YmY4YS04YjFjLTRjN2UtODRhYS0zMWY1MTI5YmViMTg=",
+
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {

@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/hierarchicalentities",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2hpZXJhcmNoaWNhbGVudGl0aWVz",
+
       "RequestMethod": "POST",
       "RequestBody": "{\r\n  \"children\": [\r\n    \"ChildTest\"\r\n  ],\r\n  \"name\": \"HierarchicalTest\"\r\n}",
       "RequestHeaders": {
@@ -69,7 +69,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/hierarchicalentities/8095d569-78e6-4e68-af08-e1d2becb5aec",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2hpZXJhcmNoaWNhbGVudGl0aWVzLzgwOTVkNTY5LTc4ZTYtNGU2OC1hZjA4LWUxZDJiZWNiNWFlYw==",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -124,7 +124,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/hierarchicalentities/8095d569-78e6-4e68-af08-e1d2becb5aec/children/421aee66-314a-448f-be42-001ea82ae10b",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2hpZXJhcmNoaWNhbGVudGl0aWVzLzgwOTVkNTY5LTc4ZTYtNGU2OC1hZjA4LWUxZDJiZWNiNWFlYy9jaGlsZHJlbi80MjFhZWU2Ni0zMTRhLTQ0OGYtYmU0Mi0wMDFlYTgyYWUxMGI=",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -179,7 +179,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/hierarchicalentities/8095d569-78e6-4e68-af08-e1d2becb5aec",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2hpZXJhcmNoaWNhbGVudGl0aWVzLzgwOTVkNTY5LTc4ZTYtNGU2OC1hZjA4LWUxZDJiZWNiNWFlYw==",
+
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {

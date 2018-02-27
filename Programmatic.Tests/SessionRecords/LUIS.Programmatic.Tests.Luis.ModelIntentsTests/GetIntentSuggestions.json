@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/intents",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2ludGVudHM=",
+
       "RequestMethod": "POST",
       "RequestBody": "{\r\n  \"name\": \"TestIntent\"\r\n}",
       "RequestHeaders": {
@@ -69,7 +69,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/intents/265755e0-d653-4a89-a116-9f7130be8fb0",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2ludGVudHMvMjY1NzU1ZTAtZDY1My00YTg5LWExMTYtOWY3MTMwYmU4ZmIw",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -124,7 +124,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/86226c53-b7a6-416f-876b-226b2b5ab07b/versions/0.1/intents/265755e0-d653-4a89-a116-9f7130be8fb0/suggest?take=100",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy84NjIyNmM1My1iN2E2LTQxNmYtODc2Yi0yMjZiMmI1YWIwN2IvdmVyc2lvbnMvMC4xL2ludGVudHMvMjY1NzU1ZTAtZDY1My00YTg5LWExMTYtOWY3MTMwYmU4ZmIwL3N1Z2dlc3Q/dGFrZT0xMDA=",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {

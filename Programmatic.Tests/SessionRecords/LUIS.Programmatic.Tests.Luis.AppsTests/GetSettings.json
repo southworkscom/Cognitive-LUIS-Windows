@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy8=",
+
       "RequestMethod": "POST",
       "RequestBody": "{\r\n  \"culture\": \"en-us\",\r\n  \"domain\": \"Comics\",\r\n  \"description\": \"New LUIS App\",\r\n  \"usageScenario\": \"IoT\",\r\n  \"name\": \"LUIS App for Settings test\"\r\n}",
       "RequestHeaders": {
@@ -69,7 +69,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/44c5f758-c631-4f8e-982b-9a7cbefbfef3/settings",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy80NGM1Zjc1OC1jNjMxLTRmOGUtOTgyYi05YTdjYmVmYmZlZjMvc2V0dGluZ3M=",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -124,7 +124,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/44c5f758-c631-4f8e-982b-9a7cbefbfef3",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy80NGM1Zjc1OC1jNjMxLTRmOGUtOTgyYi05YTdjYmVmYmZlZjM=",
+
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {

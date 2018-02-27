@@ -2,7 +2,7 @@
   "Entries": [
     {
       "RequestUri": "/luis/api/v2.0/apps/",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy8=",
+
       "RequestMethod": "POST",
       "RequestBody": "{\r\n  \"culture\": \"en-us\",\r\n  \"domain\": \"Comics\",\r\n  \"description\": \"New LUIS App\",\r\n  \"usageScenario\": \"IoT\",\r\n  \"name\": \"LUIS App to be renamed\"\r\n}",
       "RequestHeaders": {
@@ -69,7 +69,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/df7a7cde-329b-43dc-bda3-48f277575756",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9kZjdhN2NkZS0zMjliLTQzZGMtYmRhMy00OGYyNzc1NzU3NTY=",
+
       "RequestMethod": "PUT",
       "RequestBody": "{\r\n  \"name\": \"LUIS App name updated\",\r\n  \"description\": \"LUIS App description updated\"\r\n}",
       "RequestHeaders": {
@@ -130,7 +130,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/df7a7cde-329b-43dc-bda3-48f277575756",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9kZjdhN2NkZS0zMjliLTQzZGMtYmRhMy00OGYyNzc1NzU3NTY=",
+
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -185,7 +185,7 @@
     },
     {
       "RequestUri": "/luis/api/v2.0/apps/df7a7cde-329b-43dc-bda3-48f277575756",
-      "EncodedRequestUri": "L2x1aXMvYXBpL3YyLjAvYXBwcy9kZjdhN2NkZS0zMjliLTQzZGMtYmRhMy00OGYyNzc1NzU3NTY=",
+
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {
