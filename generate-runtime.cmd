@@ -3,5 +3,4 @@
 :: Copyright (C) Microsoft Corporation. All Rights Reserved.
 ::
 
-@echo off
-call %~dp0..\..\..\..\..\..\..\tools\generate.cmd cognitiveservices/data-plane/LUIS/Programmatic %*
+call autorest .\Swagger\Runtime\readme.md --csharp --version=latest --reflect-api-version
