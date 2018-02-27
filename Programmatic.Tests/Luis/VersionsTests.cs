@@ -179,7 +179,7 @@
                 var error = exeption.Body;
 
                 Assert.Equal(errorCode, error.Code);
-                Assert.Contains("task", error.Message);
+                Assert.Equal($"Cannot find an application version with the version ID {errorVersion}.", error.Message);
             });
         }
 
@@ -200,7 +200,7 @@
                 var error = exeption.Body;
 
                 Assert.Equal(errorCode, error.Code);
-                Assert.Contains("Version Id", error.Message);
+                Assert.Equal("newVersionId cannot be null or empty.", error.Message);
             });
         }
 
@@ -212,12 +212,13 @@
             {
                 var versions = await client.Versions.ListAsync(appId);
                 var first = versions.FirstOrDefault();
+                var errorVersion = first.Version + "0";
 
-                var exeption = await Assert.ThrowsAsync<ErrorResponseException>(async () => await client.Versions.DeleteAsync(appId, first.Version + "0"));
+                var exeption = await Assert.ThrowsAsync<ErrorResponseException>(async () => await client.Versions.DeleteAsync(appId, errorVersion));
                 var error = exeption.Body;
 
                 Assert.Equal(errorCode, error.Code);
-                Assert.Contains("task", error.Message);
+                Assert.Equal($"Cannot find an application version with the version ID {errorVersion}.", error.Message);
             });
         }
 
@@ -240,7 +241,7 @@
                 var error = exeption.Body;
 
                 Assert.Equal(errorCode, error.Code);
-                Assert.Contains("Version Id", error.Message);
+                Assert.Equal("newVersionId cannot be null or empty.", error.Message);
             });
         }
     }

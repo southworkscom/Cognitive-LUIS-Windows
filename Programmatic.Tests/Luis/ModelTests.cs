@@ -14,7 +14,7 @@
         {
             UseClientFor(async client =>
             {
-                var entityId = await client.Model.AddCompositeEntityAsync(appId, "0.1", new CompositeEntityModel(new List<string>() { "datetime" }, name: "CompositeTest"));
+                var entityId = await client.Model.AddCompositeEntityAsync(appId, "0.1", new CompositeEntityModel(new List<string>() { "datetimeV2" }, name: "CompositeTest"));
                 var result = await client.Model.ListCompositeEntitiesAsync(appId, "0.1");
                 await client.Model.DeleteCompositeEntityAsync(appId, "0.1", entityId);
 
@@ -27,7 +27,7 @@
         {
             UseClientFor(async client =>
             {
-                var entity = new CompositeEntityModel(new List<string>() { "datetime" }, name: "CompositeTest");
+                var entity = new CompositeEntityModel(new List<string>() { "datetimeV2" }, name: "CompositeTest");
                 var result = await client.Model.AddCompositeEntityAsync(appId, "0.1", entity);
                 await client.Model.DeleteCompositeEntityAsync(appId, "0.1", result);
 
@@ -40,7 +40,7 @@
         {
             UseClientFor(async client =>
             {
-                var entity = new CompositeEntityModel(new List<string>() { "datetime" }, name: "CompositeTest");
+                var entity = new CompositeEntityModel(new List<string>() { "datetimeV2" }, name: "CompositeTest");
                 var entityId = await client.Model.AddCompositeEntityAsync(appId, "0.1", entity);
                 var result = await client.Model.GetCompositeEntityAsync(appId, "0.1", entityId);
                 await client.Model.DeleteCompositeEntityAsync(appId, "0.1", entityId);
@@ -54,9 +54,9 @@
         {
             UseClientFor(async client =>
             {
-                var entity = new CompositeEntityModel(new List<string>() { "datetime" }, name: "CompositeTest");
+                var entity = new CompositeEntityModel(new List<string>() { "datetimeV2" }, name: "CompositeTest");
                 var entityId = await client.Model.AddCompositeEntityAsync(appId, "0.1", entity);
-                await client.Model.UpdateCompositeEntityAsync(appId, "0.1", entityId, new CompositeEntityModel(new List<string>() { "datetime" }, name: "HierarchicalTestUpdate"));
+                await client.Model.UpdateCompositeEntityAsync(appId, "0.1", entityId, new CompositeEntityModel(new List<string>() { "datetimeV2" }, name: "HierarchicalTestUpdate"));
 
                 var entities = await client.Model.ListCompositeEntitiesAsync(appId, "0.1");
                 await client.Model.DeleteCompositeEntityAsync(appId, "0.1", entityId);
@@ -70,7 +70,7 @@
         {
             UseClientFor(async client =>
             {
-                var entity = new CompositeEntityModel(new List<string>() { "datetime" }, name: "CompositeTest");
+                var entity = new CompositeEntityModel(new List<string>() { "datetimeV2" }, name: "CompositeTest");
                 var entityId = await client.Model.AddCompositeEntityAsync(appId, "0.1", entity);
                 await client.Model.DeleteCompositeEntityAsync(appId, "0.1", entityId);
 
@@ -85,7 +85,7 @@
             UseClientFor(async client =>
             {
                 var childEntityId = await client.Model.AddEntityAsync(appId, "0.1", new ModelCreateObject("ChildTest"));
-                var entity = new CompositeEntityModel(new List<string>() { "datetime" }, name: "CompositeTest");
+                var entity = new CompositeEntityModel(new List<string>() { "datetimeV2" }, name: "CompositeTest");
                 var entityId = await client.Model.AddCompositeEntityAsync(appId, "0.1", entity);
 
                 var child = new CompositeChildModelCreateObject("ChildTest");
@@ -103,7 +103,7 @@
         {
             UseClientFor(async client =>
             {
-                var entityId = await client.Model.AddCompositeEntityAsync(appId, "0.1", new CompositeEntityModel(new List<string>() { "datetime", "email" }, name: "CompositeTest"));
+                var entityId = await client.Model.AddCompositeEntityAsync(appId, "0.1", new CompositeEntityModel(new List<string>() { "datetimeV2", "email" }, name: "CompositeTest"));
                 var entity = await client.Model.GetCompositeEntityAsync(appId, "0.1", entityId);
                 var childEntityId = entity.Children.Last().Id;
 

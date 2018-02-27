@@ -1,8 +1,6 @@
 ﻿namespace LUIS.Programmatic.Tests.Luis
 {
     using Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic;
-    using Microsoft.Azure.CognitiveServices.Language.LUIS.Programmatic.Models;
-    using System.Diagnostics;
     using System.Linq;
     using System.Threading.Tasks;
     using Xunit;
@@ -43,7 +41,6 @@
             });
         }
 
-
         [Fact]
         public void TrainVersion()
         {
@@ -51,18 +48,21 @@
             {
                 var versionId = "0.1";
 
-                var result = await client.Train.TrainVersionAsync(appId, versionId);
+                var state = await client.Train.TrainVersionAsync(appId, versionId);
                 var finishStates = new string[] { "Success", "UpToDate" };
 
-                while (!finishStates.Contains(result.Status))
+                var lastState = await client.Train.GetStatusAsync(appId, versionId);
+
+                while (!lastState.All(singleState => finishStates.Contains(singleState.Details.Status)))
                 {
                     await Task.Delay(1000);
-                    result = await client.Train.TrainVersionAsync(appId, versionId);
+
+                    lastState = await client.Train.GetStatusAsync(appId, versionId);
                 }
 
-                result = await client.Train.TrainVersionAsync(appId, versionId);
+                state = await client.Train.TrainVersionAsync(appId, versionId);
 
-                Assert.Equal("UpToDate", result.Status);
+                Assert.Equal("UpToDate", state.Status);
             });
         }
     }
