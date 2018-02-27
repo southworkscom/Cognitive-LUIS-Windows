@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package>
+  <metadata>
     <id>Microsoft.Azure.CognitiveServices.LUIS</id>
     <version>$version$</version>
     <title>$title$</title>
@@ -18,4 +18,12 @@
       <dependency id="System.Net.Http" version="4.3.3"/>
     </dependencies>
   </metadata>
+  <files>
+    <file src="..\build\package\net452\Microsoft.Rest.ClientRuntime.dll" target="lib\net452"/>
+    <file src="..\build\package\net452\Microsoft.Rest.ClientRuntime.Azure.dll" target="lib\net452"/>
+    <file src="..\build\package\net452\Newtonsoft.Json.dll" target="lib\net452"/>
+    <file src="..\build\package\net452\Microsoft.Azure.CognitiveServices.Language.LUIS.dll" target="lib\net452"/>
+    <file src="..\build\package\netstandard2.0\Microsoft.Azure.CognitiveServices.Language.LUIS.dll" target="lib\netstandard2.0"/>
+    <file src="**\*.cs" exclude="**\obj\**\*.cs" target="src" />
+  </files>
 </package>
