@@ -27,7 +27,7 @@
             UseClientFor(async client =>
             {
                 var utterance = "helo, what dai is todey?";
-                var result = await client.Prediction.ResolveAsync(appId, utterance, spellCheck: true, bingSpellCheckSubscriptionKey: "00000000000000000000000000000000");
+                var result = await client.Prediction.ResolveAsync(appId, utterance, spellCheck: true, bingSpellCheckSubscriptionKey: bingSpellCheckSubscriptionKey);
 
                 Assert.True(!string.IsNullOrWhiteSpace(result.AlteredQuery));
                 Assert.Equal("hello, what day is today?", result.AlteredQuery);
